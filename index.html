@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting Phone API</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#27144c] mb-2.5">
+    <header class="text-center">
+        <h2 class="text-6xl text-white">Apple Iphone 13 Pro Max</h2>
+        <br>
+        <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
+        <br>
+        <br>
+        <button class="btn btn-primary">Buy Now</button><br>
+        <br>
+
+
+    </header>
+    <main class="container mx-auto mt-8 text-center">
+
+        <section class="bg-gray-100 p-5 m-4">
+            <input id="search-field" type="text" placeholder="search..." class="input input-bordered w-full max-w-xs" />
+            <button  onclick="handleSearch()" class="btn btn-accent">Search</button>
+
+            <!-- <input id="search-field2" type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
+            <!-- <button onclick="handleSearch2()" class="btn btn-primary">Search</button> --> 
+
+        </section>
+
+        <!-- search result -->
+        <section>
+            <!-- spinner or loader -->
+            <div id="loading-spinner" class="text-center my-60 hidden">
+                <span class="loading loading-spinner text-primary"></span>
+            </div>
+            
+            <div id="phone-container" class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-2">
+                
+            </div>
+
+            <!-- show all button -->
+             <div id="show-all-container" class="hidden mt-8 mb-9 text-center">
+                <button onclick="handleShowAll()" class="btn btn-accent ">Show All</button>
+
+             </div>
+        </section>
+
+        <!-- show Details modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+        <h3 id="show-detail-phone-name" class="text-3xl font-bold"></h3>
+
+            <div id="show-detail-container">
+
+            </div>
+
+        <div class="modal-action">
+        <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+        </form>
+        </div>
+        </div>
+        </dialog>
+
+    </main>
+    <footer>
+        <footer class="footer bg-neutral text-neutral-content grid-rows-2 p-10">
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Legal</h6>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Social</h6>
+              <a class="link link-hover">Twitter</a>
+              <a class="link link-hover">Instagram</a>
+              <a class="link link-hover">Facebook</a>
+              <a class="link link-hover">Github</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Explore</h6>
+              <a class="link link-hover">Features</a>
+              <a class="link link-hover">Enterprise</a>
+              <a class="link link-hover">Security</a>
+              <a class="link link-hover">Pricing</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Apps</h6>
+              <a class="link link-hover">Mac</a>
+              <a class="link link-hover">Windows</a>
+              <a class="link link-hover">iPhone</a>
+              <a class="link link-hover">Android</a>
+            </nav>
+          </footer>
+    </footer>
+
+
+
+    <script src="js/phone.js"></script>
+</body>
+</html>
+
