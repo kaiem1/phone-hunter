@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunting Phone API</title>
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body class="bg-[#27144c] mb-2.5">
     <header class="text-center">
+      <p class="text-yellow-200 py-4">কুত্তা চোদা অনন্ত পাল</p>
         <h2 class="text-6xl text-white">Apple Iphone 13 Pro Max</h2>
         <br>
         <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
@@ -24,6 +26,7 @@
 
         <section class="bg-gray-100 p-5 m-4">
             <input id="search-field" type="text" placeholder="search..." class="input input-bordered w-full max-w-xs" />
+          
             <button  onclick="handleSearch()" class="btn btn-accent">Search</button>
 
             <!-- <input id="search-field2" type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
@@ -55,7 +58,7 @@
         <div class="modal-box">
         <h3 id="show-detail-phone-name" class="text-3xl font-bold"></h3>
 
-            <div id="show-detail-container">
+            <div id="show-detail-container" class="text-center justify-center">
 
             </div>
 
@@ -112,6 +115,7 @@
               <a class="link link-hover">iPhone</a>
               <a class="link link-hover">Android</a>
             </nav>
+            
           </footer>
     </footer>
 

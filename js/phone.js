@@ -75,7 +75,9 @@ const showPhoneDetails = (phone) =>{
     const showDetailContainer = document.getElementById('show-detail-container');
 
     showDetailContainer.innerHTML =`
-    <img src="${phone.image}" alt="">
+    <div class="text-center justify-center">
+    <img class="text-center justify-center" src="${phone.image}" alt="">
+    </div>
     <p><span>Storage:</span>${phone.mainFeatures.storage}</p>
     <p><span>GPS:</span>${phone?.others?.GPS || 'no GPS available'}</p>
     <p><span>Display size:</span>${phone?.mainFeatures?.displaySize
